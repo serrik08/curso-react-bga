@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Propiedades from './containers/Propiedades';
+import Body from './containers/Body';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Propiedades />
+    <Body />
   </React.StrictMode>,
   document.getElementById('root')
 );

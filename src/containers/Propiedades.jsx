@@ -3,12 +3,21 @@ import Home from '../components/Home'
 import '../styles/main.css'
 import { lista } from '../assets/lista'
 
-const Propiedades = () => {
-    return (
-        <div className="contenedor">
-            <Home title={"Casas en Bolivia"} data={lista} />
-        </div>
-    )
+class Propiedades extends React.Component{
+  constructor(props){
+      super(props);
+  }
+
+  render(){
+      return (
+          <div className="contenedor">
+              <Home 
+                    title={"Casas en Bolivia"} 
+                    data={lista} 
+                    valueSearch={this.props.valueSearch}/>
+          </div>
+      )
+  }
 }
 
 export default Propiedades
